@@ -8,14 +8,21 @@ html[data-theme="dark"] .bd-content img:not(.only-dark, .dark-light) {
 }
 
 /* Move prev/next navigation from side column to bottom.
-   By default pydata-sphinx-theme lays out .bd-content as a flex row,
-   placing .prev-next-footer as a right-hand column beside the article.
-   Switching to column stacks it below the content instead. */
+   .bd-content is a flex-row; .prev-next-footer is a right-hand column.
+   flex-wrap: wrap + flex: 0 0 100% on both children forces them to
+   stack vertically without disturbing the inner sticky header. */
 .bd-content {
-    flex-direction: column !important;
+    flex-wrap: wrap !important;
+}
+
+.bd-article-container {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
 }
 
 .prev-next-footer {
+    flex: 0 0 100% !important;
     width: 100% !important;
     max-width: 100% !important;
 }

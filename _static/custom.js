@@ -1,30 +1,35 @@
-/* Make the theme toggle two-state (light ↔ dark), skipping the "auto" state.
-   pydata-sphinx-theme cycles auto → light → dark → auto by default.
-   This intercepts any landing on "auto" and immediately advances to the
-   opposite of whatever the user last explicitly chose. */
+/* Make the theme toggle two-state (light ↔ dark), skipping "auto".
+   pydata-sphinx-theme cycles auto → light → dark → auto.
+   We hook the button click AFTER PST's own handler (via setTimeout 0)
+   and, if PST landed on "auto", immediately advance to the opposite
+   of the last explicitly chosen theme. */
 (function () {
-  function fixTheme() {
-    const html = document.documentElement;
-    if (html.dataset.theme === 'auto') {
-      // Determine what to jump to: opposite of last explicit choice
-      const last = localStorage.getItem('last-explicit-theme');
-      const next = last === 'light' ? 'dark' : 'light';
-      html.dataset.theme = next;
-      localStorage.setItem('theme', next);
-      localStorage.setItem('last-explicit-theme', next);
-    } else {
-      // Record this as an explicit choice
-      localStorage.setItem('last-explicit-theme', html.dataset.theme);
-    }
+  function init() {
+    const btn = document.querySelector('.theme-switch-button');
+    if (!btn) return;
+
+    btn.addEventListener('click', function () {
+      setTimeout(function () {
+        const html = document.documentElement;
+        const current = html.dataset.theme;
+
+        if (current === 'auto') {
+          const last = localStorage.getItem('pst-theme-explicit') || 'light';
+          const next = last === 'dark' ? 'light' : 'dark';
+          html.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          localStorage.setItem('pst-theme-explicit', next);
+        } else {
+          // Record this as the last deliberate choice
+          localStorage.setItem('pst-theme-explicit', current);
+        }
+      }, 0);
+    });
   }
 
-  // Run on load to correct any "auto" state on page open
-  document.addEventListener('DOMContentLoaded', fixTheme);
-
-  // Watch for attribute changes triggered by the toggle button
-  const observer = new MutationObserver(fixTheme);
-  observer.observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ['data-theme'],
-  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
