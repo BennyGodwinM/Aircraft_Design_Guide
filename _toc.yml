@@ -1,17 +1,25 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Table of Contents — Aircraft Design Guide
 # ─────────────────────────────────────────────────────────────────────────────
+# To publish a section: uncomment its block and push.
+# Sections are grouped by Part. Each section needs its notebooks complete
+# before being made visible.
+# ─────────────────────────────────────────────────────────────────────────────
 
 format : jb-book
 root   : intro
 
 parts:
-  - caption: Getting Started
+
+  # ── PART I — FOUNDATIONS & CONTEXT ─────────────────────────────────────────
+  - caption: "Part I — Foundations & Context"
     chapters:
       - file: preface
         title: "Preface"
+
+      # ✅ COMPLETE
       - file: 01_Overview/index
-        title: "1 — Overview of Aircraft Design"
+        title: "1 — Introduction to Aircraft Design"
         sections:
           - file: 01_Overview/01_what_is_design
           - file: 01_Overview/02_philosophy
@@ -20,21 +28,260 @@ parts:
           - file: 01_Overview/05_hurdles
           - file: 01_Overview/06_summary
 
-  # Uncomment each section as it is completed:
-  # - caption: Core Disciplines
+      # 🚧 Uncomment when Section 2 is complete:
+      # - file: 02_Requirements/index
+      #   title: "2 — Stakeholders, Requirements & Specifications"
+      #   sections:
+      #     - file: 02_Requirements/01_stakeholders
+      #     - file: 02_Requirements/02_needs_goals
+      #     - file: 02_Requirements/03_requirements_engineering
+      #     - file: 02_Requirements/04_mission_profiles
+      #     - file: 02_Requirements/05_design_drivers
+
+      # 🚧 Uncomment when Section 3 is complete:
+      # - file: 03_Regulations/index
+      #   title: "3 — Regulations, Airworthiness & Certification"
+      #   sections:
+      #     - file: 03_Regulations/01_regulatory_bodies
+      #     - file: 03_Regulations/02_certification_basis
+      #     - file: 03_Regulations/03_airworthiness_categories
+      #     - file: 03_Regulations/04_safety_philosophy
+      #     - file: 03_Regulations/05_environmental_noise
+
+  # ── PART II — MISSION ANALYSIS & CONCEPTUAL DESIGN ─────────────────────────
+  # - caption: "Part II — Mission Analysis & Conceptual Design"
   #   chapters:
-  #     - file: 02_Fundamentals_of_Aerodynamics
-  #     - file: 03_Aircraft_Configuration
-  #     - file: 04_Propulsion_Systems
-  #     - file: 05_Structures_and_Materials
-  #
-  # - caption: Sizing & Performance
+
+      # 🚧 Uncomment when Section 4 is complete:
+      # - file: 04_Mission_Analysis/index
+      #   title: "4 — Mission Analysis & Top-Level Aircraft Requirements"
+      #   sections:
+      #     - file: 04_Mission_Analysis/01_tlars
+      #     - file: 04_Mission_Analysis/02_fuel_fraction
+      #     - file: 04_Mission_Analysis/03_constraint_analysis
+
+      # 🚧 Uncomment when Section 5 is complete:
+      # - file: 05_Configuration/index
+      #   title: "5 — Conceptual Design & Configuration Selection"
+      #   sections:
+      #     - file: 05_Configuration/01_fixed_wing_config
+      #     - file: 05_Configuration/02_rotorcraft_config
+      #     - file: 05_Configuration/03_multirotor_config
+      #     - file: 05_Configuration/04_tiltrotor_config
+      #     - file: 05_Configuration/05_trade_studies
+
+      # 🚧 Uncomment when Section 6 is complete:
+      # - file: 06_Sizing/index
+      #   title: "6 — Preliminary Sizing & Weight Estimation"
+      #   sections:
+      #     - file: 06_Sizing/01_first_order_weight
+      #     - file: 06_Sizing/02_class_ii_weight
+      #     - file: 06_Sizing/03_cg_estimation
+
+  # ── PART III — AERODYNAMICS ─────────────────────────────────────────────────
+  # - caption: "Part III — Aerodynamics"
   #   chapters:
-  #     - file: 06_Weight_and_Balance
-  #     - file: 07_Performance_Analysis
-  #     - file: 08_Stability_and_Control
-  #
-  # - caption: Design Integration
+
+      # 🚧 Uncomment when Section 7 is complete:
+      # - file: 07_Aerodynamics/index
+      #   title: "7 — Aerodynamic Fundamentals"
+      #   sections:
+      #     - file: 07_Aerodynamics/01_fluid_mechanics
+      #     - file: 07_Aerodynamics/02_lift_drag_subsonic
+      #     - file: 07_Aerodynamics/03_compressibility
+      #     - file: 07_Aerodynamics/04_rotor_propeller
+
+      # 🚧 Uncomment when Section 8 is complete:
+      # - file: 08_Wing_Airfoil/index
+      #   title: "8 — Wing & Airfoil Design"
+      #   sections:
+      #     - file: 08_Wing_Airfoil/01_airfoil_design
+      #     - file: 08_Wing_Airfoil/02_wing_planform
+      #     - file: 08_Wing_Airfoil/03_high_lift
+      #     - file: 08_Wing_Airfoil/04_control_surfaces
+
+      # 🚧 Uncomment when Section 9 is complete:
+      # - file: 09_Fuselage/index
+      #   title: "9 — Fuselage & Body Aerodynamics"
+      #   sections:
+      #     - file: 09_Fuselage/01_fuselage_aero
+      #     - file: 09_Fuselage/02_rotorcraft_fuselage
+
+      # 🚧 Uncomment when Section 10 is complete:
+      # - file: 10_Stability_Aero/index
+      #   title: "10 — Stability & Control (Aerodynamic Aspects)"
+      #   sections:
+      #     - file: 10_Stability_Aero/01_longitudinal_static
+      #     - file: 10_Stability_Aero/02_directional_lateral
+
+  # ── PART IV — PROPULSION SYSTEMS ────────────────────────────────────────────
+  # - caption: "Part IV — Propulsion Systems"
   #   chapters:
-  #     - file: 09_Constraints_and_Regulations
-  #     - file: 10_Design_Tradeoffs
+
+      # 🚧 Uncomment when Section 11 is complete:
+      # - file: 11_Propulsion/index
+      #   title: "11 — Propulsion Overview & Selection"
+      #   sections:
+      #     - file: 11_Propulsion/01_propulsion_taxonomy
+      #     - file: 11_Propulsion/02_engine_matching
+      #     - file: 11_Propulsion/03_gas_turbine
+      #     - file: 11_Propulsion/04_electric_propulsion
+
+  # ── PART V — STRUCTURAL DESIGN & MATERIALS ──────────────────────────────────
+  # - caption: "Part V — Structural Design & Materials"
+  #   chapters:
+
+      # 🚧 Uncomment when Section 12 is complete:
+      # - file: 12_Structures/index
+      #   title: "12 — Structural Concepts & Load Paths"
+      #   sections:
+      #     - file: 12_Structures/01_loads
+      #     - file: 12_Structures/02_fixed_wing_structural
+      #     - file: 12_Structures/03_rotorcraft_structural
+      #     - file: 12_Structures/04_uav_structural
+
+      # 🚧 Uncomment when Section 13 is complete:
+      # - file: 13_Materials/index
+      #   title: "13 — Materials Selection"
+      #   sections:
+      #     - file: 13_Materials/01_metallic_materials
+      #     - file: 13_Materials/02_composite_materials
+      #     - file: 13_Materials/03_advanced_materials
+
+      # 🚧 Uncomment when Section 14 is complete:
+      # - file: 14_Systems/index
+      #   title: "14 — Aircraft Systems Design"
+      #   sections:
+      #     - file: 14_Systems/01_flight_controls
+      #     - file: 14_Systems/02_hydraulic_pneumatic
+      #     - file: 14_Systems/03_electrical
+      #     - file: 14_Systems/04_avionics
+      #     - file: 14_Systems/05_ecs
+      #     - file: 14_Systems/06_fuel_systems
+      #     - file: 14_Systems/07_landing_gear
+
+  # ── PART VI — PERFORMANCE ANALYSIS ──────────────────────────────────────────
+  # - caption: "Part VI — Performance Analysis"
+  #   chapters:
+
+      # 🚧 Uncomment when Section 15 is complete:
+      # - file: 15_Performance_Fixed_Wing/index
+      #   title: "15 — Fixed-Wing Aircraft Performance"
+      #   sections:
+      #     - file: 15_Performance_Fixed_Wing/01_steady_flight
+      #     - file: 15_Performance_Fixed_Wing/02_climb
+      #     - file: 15_Performance_Fixed_Wing/03_range_endurance
+      #     - file: 15_Performance_Fixed_Wing/04_takeoff_landing
+
+      # 🚧 Uncomment when Section 16 is complete:
+      # - file: 16_Performance_Rotorcraft/index
+      #   title: "16 — Rotorcraft & Multirotor Performance"
+      #   sections:
+      #     - file: 16_Performance_Rotorcraft/01_hover
+      #     - file: 16_Performance_Rotorcraft/02_forward_flight
+      #     - file: 16_Performance_Rotorcraft/03_multirotor_performance
+
+  # ── PART VII — STABILITY & CONTROL ──────────────────────────────────────────
+  # - caption: "Part VII — Stability & Control"
+  #   chapters:
+
+      # 🚧 Uncomment when Section 17 is complete:
+      # - file: 17_Stability_Control/index
+      #   title: "17 — Static & Dynamic Stability"
+      #   sections:
+      #     - file: 17_Stability_Control/01_longitudinal_static_detail
+      #     - file: 17_Stability_Control/02_dynamic_longitudinal
+      #     - file: 17_Stability_Control/03_lateral_directional_dynamic
+      #     - file: 17_Stability_Control/04_rotorcraft_stability
+
+  # ── PART VIII — DETAILED DESIGN ─────────────────────────────────────────────
+  # - caption: "Part VIII — Detailed Design"
+  #   chapters:
+
+      # 🚧 Uncomment when Section 18 is complete:
+      # - file: 18_Structural_Analysis/index
+      #   title: "18 — Structural Analysis & Sizing"
+      #   sections:
+      #     - file: 18_Structural_Analysis/01_analysis_methods
+      #     - file: 18_Structural_Analysis/02_aeroelasticity
+
+      # 🚧 Uncomment when Section 19 is complete:
+      # - file: 19_Thermal_Acoustic/index
+      #   title: "19 — Thermal & Acoustic Design"
+      #   sections:
+      #     - file: 19_Thermal_Acoustic/01_aero_heating
+      #     - file: 19_Thermal_Acoustic/02_noise_acoustics
+
+  # ── PART IX — CAD, DIGITAL DESIGN & ENGINEERING TOOLS ───────────────────────
+  # - caption: "Part IX — CAD, Digital Design & Engineering Tools"
+  #   chapters:
+
+      # 🚧 Uncomment when Section 20 is complete:
+      # - file: 20_CAD/index
+      #   title: "20 — CAD Framework & Digital Design Environment"
+      #   sections:
+      #     - file: 20_CAD/01_cad_overview
+      #     - file: 20_CAD/02_parametric_modelling
+      #     - file: 20_CAD/03_surface_modelling
+      #     - file: 20_CAD/04_assembly_modelling
+
+      # 🚧 Uncomment when Section 21 is complete:
+      # - file: 21_Interference/index
+      #   title: "21 — Interference Checks & Clearance Analysis"
+      #   sections:
+      #     - file: 21_Interference/01_clearance_types
+      #     - file: 21_Interference/02_clash_detection
+      #     - file: 21_Interference/03_systems_routing
+      #     - file: 21_Interference/04_mass_properties
+
+      # 🚧 Uncomment when Section 22 is complete:
+      # - file: 22_Tolerancing/index
+      #   title: "22 — Tolerancing, GD&T & Dimensional Management"
+      #   sections:
+      #     - file: 22_Tolerancing/01_tolerancing_fundamentals
+      #     - file: 22_Tolerancing/02_gdt
+      #     - file: 22_Tolerancing/03_dimensional_management
+      #     - file: 22_Tolerancing/04_composite_tolerancing
+
+  # ── PART X — MANUFACTURING & BUILD CONSIDERATIONS ───────────────────────────
+  # - caption: "Part X — Manufacturing & Build Considerations"
+  #   chapters:
+
+      # 🚧 Uncomment when Section 23 is complete:
+      # - file: 23_Manufacturing/index
+      #   title: "23 — Manufacturing Processes & DFM"
+      #   sections:
+      #     - file: 23_Manufacturing/01_dfm_dfa
+      #     - file: 23_Manufacturing/02_metallic_manufacturing
+      #     - file: 23_Manufacturing/03_composite_manufacturing
+      #     - file: 23_Manufacturing/04_additive_manufacturing
+      #     - file: 23_Manufacturing/05_assembly_integration
+
+      # 🚧 Uncomment when Section 24 is complete:
+      # - file: 24_Quality/index
+      #   title: "24 — Quality Control, Inspection & Airworthiness of Manufacture"
+      #   sections:
+      #     - file: 24_Quality/01_first_article_inspection
+      #     - file: 24_Quality/02_ndt
+      #     - file: 24_Quality/03_acceptance_flight_test
+
+  # ── PART XI — OPERATIONS, SUSTAINMENT & LIFECYCLE ───────────────────────────
+  # - caption: "Part XI — Operations, Sustainment & Lifecycle"
+  #   chapters:
+
+      # 🚧 Uncomment when Section 25 is complete:
+      # - file: 25_Sustainment/index
+      #   title: "25 — Maintainability, Reliability & Supportability"
+      #   sections:
+      #     - file: 25_Sustainment/01_reliability
+      #     - file: 25_Sustainment/02_maintainability
+      #     - file: 25_Sustainment/03_corrosion
+      #     - file: 25_Sustainment/04_life_extension
+
+      # 🚧 Uncomment when Section 26 is complete:
+      # - file: 26_Future_Trends/index
+      #   title: "26 — Environmental Sustainability & Future Trends"
+      #   sections:
+      #     - file: 26_Future_Trends/01_environmental_impact
+      #     - file: 26_Future_Trends/02_alternative_propulsion
+      #     - file: 26_Future_Trends/03_future_concepts
