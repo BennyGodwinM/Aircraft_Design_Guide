@@ -1,0 +1,8 @@
+/* Override pydata-sphinx-theme's dark-mode image background.
+   The theme adds a white/light background to all images in dark mode
+   to make opaque screenshots readable. Our figures use transparent
+   backgrounds by design, so we remove this. */
+html[data-theme="dark"] .bd-content div.cell_output img,
+html[data-theme="dark"] .bd-content img:not(.only-dark, .dark-light) {
+    background-color: transparent !important;
+}

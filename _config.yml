@@ -18,6 +18,8 @@ html:
   use_repository_button  : true
   use_download_button    : true
   home_page_in_navbar    : false
+  extra_css:
+    - _static/custom.css
 
 # ── Repository ────────────────────────────────────────────────────────────────
 repository:
