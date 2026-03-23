@@ -285,3 +285,17 @@ parts:
       #     - file: 26_Future_Trends/01_environmental_impact
       #     - file: 26_Future_Trends/02_alternative_propulsion
       #     - file: 26_Future_Trends/03_future_concepts
+
+  # ── PART XII — SPECIAL TOPICS ───────────────────────────────────────────────
+  # - caption: "Part XII — Special Topics"
+  #   chapters:
+
+      # 🚧 Uncomment when Section 27 is complete:
+      # - file: 27_Special_Topics/index
+      #   title: "27 — Special Topics in Aircraft Design"
+      #   sections:
+      #     - file: 27_Special_Topics/01_uas_autonomous
+      #     - file: 27_Special_Topics/02_evtol_uam
+      #     - file: 27_Special_Topics/03_supersonic_hypersonic
+      #     - file: 27_Special_Topics/04_novel_configurations
+      #     - file: 27_Special_Topics/05_emerging_methods
