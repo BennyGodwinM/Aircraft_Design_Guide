@@ -1,0 +1,40 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Table of Contents — Aircraft Design Guide
+# ─────────────────────────────────────────────────────────────────────────────
+
+format : jb-book
+root   : intro
+
+parts:
+  - caption: Getting Started
+    chapters:
+      - file: preface
+        title: "Preface"
+      - file: 01_Overview/index
+        title: "1 — Overview of Aircraft Design"
+        sections:
+          - file: 01_Overview/01_what_is_design
+          - file: 01_Overview/02_philosophy
+          - file: 01_Overview/03_design_phases
+          - file: 01_Overview/04_interdisciplinary
+          - file: 01_Overview/05_hurdles
+          - file: 01_Overview/06_summary
+
+  # Uncomment each section as it is completed:
+  # - caption: Core Disciplines
+  #   chapters:
+  #     - file: 02_Fundamentals_of_Aerodynamics
+  #     - file: 03_Aircraft_Configuration
+  #     - file: 04_Propulsion_Systems
+  #     - file: 05_Structures_and_Materials
+  #
+  # - caption: Sizing & Performance
+  #   chapters:
+  #     - file: 06_Weight_and_Balance
+  #     - file: 07_Performance_Analysis
+  #     - file: 08_Stability_and_Control
+  #
+  # - caption: Design Integration
+  #   chapters:
+  #     - file: 09_Constraints_and_Regulations
+  #     - file: 10_Design_Tradeoffs

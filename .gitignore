@@ -1,0 +1,35 @@
+# Jupyter Book build output
+_build/
+
+# Jupyter cache (execution cache — do NOT ignore if you want cached outputs in CI)
+.jupyter_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# VS Code / editors
+.vscode/
+.idea/
+
+# Environment
+.env
+venv/
+.venv/
+
+# Reference materials (large PDFs, local resources — not tracked in repo)
+resources/
+
+# Claude internal
+.claude/

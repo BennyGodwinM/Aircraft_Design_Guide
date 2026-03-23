@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Jupyter Book configuration — Aircraft Design Guide
+# ─────────────────────────────────────────────────────────────────────────────
+
+title  : Aircraft Design Guide
+author : Benny Godwin
+only_build_toc_files: true
+
+# ── Execution ─────────────────────────────────────────────────────────────────
+execute:
+  execute_notebooks : cache
+  timeout           : 180
+
+# ── HTML output ───────────────────────────────────────────────────────────────
+html:
+  baseurl                : "https://BennyGodwinM.github.io/Aircraft_Design_Guide"
+  use_issues_button      : true
+  use_repository_button  : true
+  use_download_button    : true
+  home_page_in_navbar    : false
+
+# ── Repository ────────────────────────────────────────────────────────────────
+repository:
+  url         : https://github.com/BennyGodwinM/Aircraft_Design_Guide
+  branch      : main
+  path_to_book: .
+
+# ── Bibliography ──────────────────────────────────────────────────────────────
+bibtex_bibfiles:
+  - references.bib
+
+# ── Sphinx ────────────────────────────────────────────────────────────────────
+sphinx:
+  config:
+    bibtex_reference_style : author_year
+    mathjax_path           : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    html_theme_options:
+      show_navbar_depth  : 2
+      navigation_depth   : 4
