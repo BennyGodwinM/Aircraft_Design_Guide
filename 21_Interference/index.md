@@ -5,7 +5,7 @@
 > *How do we ensure that all components fit together correctly, with no unintended clashes, and appropriate clearances?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

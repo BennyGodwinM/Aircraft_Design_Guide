@@ -5,7 +5,7 @@
 > *What legal, safety, and regulatory frameworks govern the design, manufacture, and operation of aerial vehicles?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

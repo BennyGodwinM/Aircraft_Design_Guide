@@ -5,7 +5,7 @@
 > *How does the structure carry loads from the aerodynamic surfaces and inertial sources to a safe, efficient load path?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

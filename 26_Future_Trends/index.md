@@ -5,7 +5,7 @@
 > *Where is aircraft design heading, and how must the industry change to address climate and technological challenges?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

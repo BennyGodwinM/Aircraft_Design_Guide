@@ -5,7 +5,7 @@
 > *What propulsion technology propels the vehicle, and how is the right one chosen?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

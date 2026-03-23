@@ -5,7 +5,7 @@
 > *How does the fuselage contribute to, and detract from, aerodynamic performance?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

@@ -5,7 +5,7 @@
 > *How do thermal and acoustic environments affect the vehicle and its structure, and how do we design against them?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

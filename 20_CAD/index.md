@@ -5,7 +5,7 @@
 > *What tools, standards, and workflows are used to turn analytical definitions into a full 3D digital description of the vehicle?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

@@ -5,7 +5,7 @@
 > *How are aircraft components made, and how should design decisions account for manufacturing feasibility and cost?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

@@ -5,7 +5,7 @@
 > *How does an operator's need become a set of precise numbers that engineers can design to?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

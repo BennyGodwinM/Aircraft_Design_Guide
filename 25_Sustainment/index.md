@@ -5,7 +5,7 @@
 > *How is the aircraft designed to be maintained efficiently over its operational life?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

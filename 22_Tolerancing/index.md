@@ -5,7 +5,7 @@
 > *How do we specify allowable variation in dimensions to ensure parts fit, function, and are manufacturable?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

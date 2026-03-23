@@ -5,7 +5,7 @@
 > *How do we design the lifting surface(s) to meet aerodynamic efficiency, structural, and handling requirements simultaneously?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

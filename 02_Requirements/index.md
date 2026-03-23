@@ -5,7 +5,7 @@
 > *Who has a stake in this vehicle, what do they need, and how do those needs become engineering requirements?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

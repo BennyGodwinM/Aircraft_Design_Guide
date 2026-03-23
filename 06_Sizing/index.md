@@ -5,7 +5,7 @@
 > *How big and how heavy will the vehicle be, even before we know its detailed shape?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

@@ -5,7 +5,7 @@
 > *How does the vehicle respond to disturbances, and what makes it naturally stable or unstable?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

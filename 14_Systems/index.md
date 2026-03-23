@@ -5,7 +5,7 @@
 > *Beyond structure and aerodynamics, what systems must be integrated to make the vehicle function, and how do they interact?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

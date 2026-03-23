@@ -26,7 +26,7 @@ Full references are provided at the end of each section.
 ```{seealso}
 **Companion video series** — GabeFPV's *Engineering a UAV* on YouTube applies the structured engineering design process to a small fixed-wing UAV from mission definition through flight test. Part 1 covers what design is, the three design phases, requirements, and conceptual sizing — the core topics of this chapter.
 
-[▶ Engineering a UAV — Part 1 (YouTube)](https://www.youtube.com/watch?v=geljbqJz1ro)
+[Engineering a UAV — Part 1 (YouTube)](https://www.youtube.com/watch?v=geljbqJz1ro)
 ```
 
 ```{bibliography}

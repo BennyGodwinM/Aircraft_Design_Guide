@@ -5,7 +5,7 @@
 > *What does the vehicle look like, at the broadest level, and why?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

@@ -5,7 +5,7 @@
 > *How do the aerodynamic forces and moments produced by the vehicle shape determine its intrinsic stability?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

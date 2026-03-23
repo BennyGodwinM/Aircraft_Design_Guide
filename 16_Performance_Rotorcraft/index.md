@@ -5,7 +5,7 @@
 > *How does the performance of rotary-wing vehicles differ fundamentally from fixed-wing?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

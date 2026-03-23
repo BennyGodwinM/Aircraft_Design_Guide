@@ -5,7 +5,7 @@
 > *What can this aircraft do, and how do its design parameters determine the performance numbers?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

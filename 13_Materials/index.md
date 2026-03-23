@@ -5,7 +5,7 @@
 > *Which materials carry loads most efficiently, and how do manufacturing, cost, and certification constrain that choice?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter

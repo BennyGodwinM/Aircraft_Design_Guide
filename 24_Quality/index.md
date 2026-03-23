@@ -5,7 +5,7 @@
 > *How do we verify that what has been built matches what was designed, and meets the required standards?*
 
 ```{{note}}
-🚧 **This section is under construction.** It will be published once the notebooks are complete.
+ **This section is under construction.** It will be published once the notebooks are complete.
 ```
 
 ## Sections in this Chapter
