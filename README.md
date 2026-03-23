@@ -284,9 +284,7 @@ Full bibliography entries are in [`references.bib`](references.bib).
 ## Author
 
 **Benny Godwin Manoharan**
-Aerospace Engineering, Wichita State University
-
-Chief Engineer on the AIAA Design-Build-Fly and Bronze Propeller competition teams at WSU; research experience at the National Institute for Aviation Research (NIAR) in structural analysis and MBSE-based requirement flow-down; co-author of an AIAA Aviation 2025 conference paper on UAV flight-data analysis.
+Aerospace Engineer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/bennygodwin/)
 [![GitHub](https://img.shields.io/badge/GitHub-BennyGodwinM-black?style=flat-square&logo=github)](https://github.com/BennyGodwinM)
