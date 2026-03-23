@@ -4,7 +4,7 @@
    and, if PST landed on "auto", immediately advance to the opposite
    of the last explicitly chosen theme. */
 (function () {
-  function init() {
+  function initThemeToggle() {
     const btn = document.querySelector('.theme-switch-button');
     if (!btn) return;
 
@@ -25,6 +25,36 @@
         }
       }, 0);
     });
+  }
+
+  /* Move copyright text into the bottom of the secondary sidebar
+     (Contents / page-TOC panel) so it appears under the TOC. */
+  function moveCopyrightToSidebar() {
+    const sidebar = document.querySelector('.bd-sidebar-secondary');
+    if (!sidebar) return;
+
+    // Collect the author and copyright paragraphs from the footer
+    const author    = document.querySelector('.component-author');
+    const copyright = document.querySelector('p.copyright');
+    if (!author && !copyright) return;
+
+    // Build a small container div
+    const wrapper = document.createElement('div');
+    wrapper.className = 'sidebar-copyright';
+
+    if (author)    wrapper.appendChild(author.cloneNode(true));
+    if (copyright) wrapper.appendChild(copyright.cloneNode(true));
+
+    sidebar.appendChild(wrapper);
+
+    // Hide the originals so they don't appear twice
+    if (author)    author.style.display    = 'none';
+    if (copyright) copyright.style.display = 'none';
+  }
+
+  function init() {
+    initThemeToggle();
+    moveCopyrightToSidebar();
   }
 
   if (document.readyState === 'loading') {
