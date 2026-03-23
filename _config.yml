@@ -2,8 +2,9 @@
 # Jupyter Book configuration — Aircraft Design Guide
 # ─────────────────────────────────────────────────────────────────────────────
 
-title  : Aircraft Design Guide
-author : Benny Godwin
+title     : Aircraft Design Guide
+author    : Benny Godwin
+copyright : "2026"
 only_build_toc_files: true
 
 # ── Execution ─────────────────────────────────────────────────────────────────
