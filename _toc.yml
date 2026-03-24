@@ -22,11 +22,19 @@ parts:
         title: "1 — Introduction to Aircraft Design"
         sections:
           - file: 01_Overview/01_what_is_design
-          - file: 01_Overview/02_philosophy
-          - file: 01_Overview/03_design_phases
-          - file: 01_Overview/04_interdisciplinary
-          - file: 01_Overview/05_hurdles
-          - file: 01_Overview/06_summary
+            title: "1.1 — What is Aircraft Design?"
+          - file: 01_Overview/02_history_of_design
+            title: "1.2 — A History of Aircraft Design"
+          - file: 01_Overview/03_philosophy
+            title: "1.3 — Design Philosophy"
+          - file: 01_Overview/04_design_phases
+            title: "1.4 — Design Phases"
+          - file: 01_Overview/05_interdisciplinary
+            title: "1.5 — Interdisciplinary Nature"
+          - file: 01_Overview/06_hurdles
+            title: "1.6 — Common Hurdles"
+          - file: 01_Overview/07_summary
+            title: "1.7 — Summary"
 
       # Uncomment when Section 2 is complete:
       # - file: 02_Requirements/index

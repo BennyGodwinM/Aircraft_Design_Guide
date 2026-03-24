@@ -5,8 +5,12 @@
 
 ## Section 1 · Introduction to Aircraft Design & Vehicle Classification
 ### 1.1 What is Aircraft Design?
-### 1.2 Classification of Aerial Vehicles
-### 1.3 The Design Spiral & Convergence
+### 1.2 A History of Aircraft Design
+### 1.3 Design Philosophy
+### 1.4 Design Phases
+### 1.5 The Interdisciplinary Nature of Aircraft Design
+### 1.6 Common Hurdles
+### 1.7 Summary
 
 ## Section 2 · Stakeholders, Requirements & System Specifications
 ### 2.1 Stakeholder Identification & Analysis
