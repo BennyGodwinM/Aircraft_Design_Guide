@@ -181,6 +181,21 @@
 ### 27.4 Novel & Unconventional Configurations
 ### 27.5 Emerging Methods: Digital Engineering, ML & Optimisation
 
+# SUPPLEMENTARY RESOURCES
+
+## SR.1 — The International Standard Atmosphere (ISA)
+### ISA governing equations and layer structure
+### Tabulated properties (0 to 65 000 ft)
+### Four-panel property plots (T, P, rho, a vs. altitude)
+### Density altitude — definition, equations, and plots
+### Non-standard atmospheres (ISA +15, ISA +35, ISA -15)
+
+## SR.2 — Airfoil Data & NACA Series Reference
+
+## SR.3 — Aerospace Material Properties
+
+## SR.4 — Propulsion Reference Data
+
 # APPENDICES
 
 ## Appendix A · Key Design Standards & References

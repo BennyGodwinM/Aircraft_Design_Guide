@@ -299,3 +299,12 @@ parts:
  # - file: 27_Special_Topics/03_supersonic_hypersonic
  # - file: 27_Special_Topics/04_novel_configurations
  # - file: 27_Special_Topics/05_emerging_methods
+
+ # ── SUPPLEMENTARY RESOURCES ──────────────────────────────────────────────────
+ - caption: "Supplementary Resources"
+   chapters:
+   - file: Supplementary_Resources/index
+     title: "Supplementary Resources"
+     sections:
+       - file: Supplementary_Resources/01_standard_atmosphere
+         title: "SR.1 — The International Standard Atmosphere (ISA)"
