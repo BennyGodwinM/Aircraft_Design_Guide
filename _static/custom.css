@@ -398,13 +398,20 @@ div.admonition {
   margin: 1.25rem 0 !important;
 }
 
-.admonition-title {
+.admonition-title,
+.admonition > .admonition-title,
+div.admonition > p.admonition-title {
   font-weight: 700 !important;
   font-size: 0.875rem !important;
   color: var(--cc-text-primary) !important;
+  background: transparent !important;
+  background-color: transparent !important;
   margin-bottom: 0.5rem !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.05em !important;
+  border-radius: 0 !important;
 }
 
 .admonition.note, .admonition.seealso {
