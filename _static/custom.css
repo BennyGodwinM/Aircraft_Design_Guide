@@ -573,10 +573,17 @@ figcaption, .caption-text {
   margin-bottom: 0.5rem !important;
 }
 
-.cell_input, .input_area {
-  background-color: var(--cc-bg-code) !important;
-  border: 1px solid var(--cc-border) !important;
-  border-radius: 8px !important;
+/* Hide all code input cells site-wide — show outputs (figures, tables) only */
+.cell_input,
+div.cell_input,
+.input_area,
+div.input_area,
+.jp-Cell-inputWrapper,
+.highlight-ipython3,
+div.highlight-ipython3,
+.nbinput,
+div.nbinput {
+  display: none !important;
 }
 
 .cell_output, .output_area {
