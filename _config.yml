@@ -42,3 +42,4 @@ sphinx:
  html_theme_options:
  show_navbar_depth : 2
  navigation_depth : 4
+ default_mode : dark

@@ -1,56 +1,733 @@
-/* Override pydata-sphinx-theme's dark-mode image background.
-   The theme adds a white/light background to all images in dark mode
-   to make opaque screenshots readable. Our figures use transparent
-   backgrounds by design, so we remove this. */
-html[data-theme="dark"] .bd-content div.cell_output img,
-html[data-theme="dark"] .bd-content img:not(.only-dark, .dark-light) {
-    background-color: transparent !important;
+/* =============================================================================
+   Aircraft Design Guide — Claude Code docs-inspired dark theme
+   Matches: https://code.claude.com/docs layout, colours, typography
+   ============================================================================= */
+
+/* ── 1. COLOR TOKENS ──────────────────────────────────────────────────────── */
+:root {
+  --cc-bg-page:          #0e0e0e;
+  --cc-bg-sidebar:       #0a0a0a;
+  --cc-bg-surface:       #161616;
+  --cc-bg-hover:         #1c1c1c;
+  --cc-bg-code:          #141414;
+  --cc-border:           #2a2a2a;
+  --cc-border-subtle:    #1e1e1e;
+  --cc-text-primary:     #dedede;
+  --cc-text-secondary:   #9e9e9e;
+  --cc-text-muted:       #606060;
+  --cc-accent:           #d4a27f;
+  --cc-accent-dim:       rgba(212, 162, 127, 0.14);
+  --cc-accent-hover:     #e8bfa0;
+  --cc-link:             #d4a27f;
+
+  /* Override PyData / Sphinx-Book theme variables */
+  --pst-color-background:      var(--cc-bg-page);
+  --pst-color-on-background:   var(--cc-text-primary);
+  --pst-color-surface:         var(--cc-bg-surface);
+  --pst-color-on-surface:      var(--cc-text-primary);
+  --pst-color-border:          var(--cc-border);
+  --pst-color-shadow:          rgba(0,0,0,0.6);
+  --pst-color-text-base:       var(--cc-text-primary);
+  --pst-color-text-muted:      var(--cc-text-secondary);
+  --pst-color-link:            var(--cc-accent);
+  --pst-color-link-hover:      var(--cc-accent-hover);
+  --pst-color-accent:          var(--cc-accent);
+  --pst-color-inline-code-bg:  var(--cc-bg-code);
+  --pst-color-inline-code:     #e0c8a8;
+  --pst-color-target:          var(--cc-accent-dim);
+  --pst-color-warning:         #e8a44a;
+  --pst-color-warning-bg:      rgba(232, 164, 74, 0.10);
+  --pst-color-danger:          #e06060;
+  --pst-color-danger-bg:       rgba(220, 80, 80, 0.10);
+  --pst-color-info:            #6aabde;
+  --pst-color-info-bg:         rgba(70, 130, 200, 0.10);
+  --pst-color-success:         #6abf85;
+  --pst-color-success-bg:      rgba(70, 180, 120, 0.10);
+  --pst-font-family-base:      system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --pst-font-family-heading:   Georgia, "Times New Roman", Times, serif;
+  --pst-font-family-monospace: "SF Mono", "Fira Code", "Fira Mono", Consolas, Monaco, "Andale Mono", monospace;
+  --pst-font-size-base:        16px;
 }
 
-/* Move prev/next navigation from side column to bottom.
-   .bd-content is a flex-row; .prev-next-footer is a right-hand column.
-   flex-wrap: wrap + flex: 0 0 100% on both children forces them to
-   stack vertically without disturbing the inner sticky header. */
+/* Force dark theme regardless of system preference */
+html, html[data-theme="light"], html[data-theme="dark"] {
+  color-scheme: dark;
+  background-color: var(--cc-bg-page);
+  color: var(--cc-text-primary);
+}
+
+/* ── 2. GLOBAL BASE ───────────────────────────────────────────────────────── */
+body {
+  background-color: var(--cc-bg-page) !important;
+  color: var(--cc-text-primary) !important;
+  font-family: var(--pst-font-family-base) !important;
+  font-size: var(--pst-font-size-base) !important;
+  line-height: 1.7 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── 3. TYPOGRAPHY ────────────────────────────────────────────────────────── */
+h1, .h1 {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+  font-size: clamp(1.75rem, 3vw, 2.25rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--cc-text-primary) !important;
+  line-height: 1.2 !important;
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+h2, .h2 {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+  font-size: clamp(1.25rem, 2vw, 1.6rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.01em !important;
+  color: var(--cc-text-primary) !important;
+  line-height: 1.3 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+h3, .h3 {
+  font-family: var(--pst-font-family-base) !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: var(--cc-text-primary) !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+h4, h5, h6 {
+  font-family: var(--pst-font-family-base) !important;
+  font-weight: 600 !important;
+  color: var(--cc-text-primary) !important;
+}
+
+p {
+  color: var(--cc-text-primary);
+  line-height: 1.75;
+}
+
+a {
+  color: var(--cc-accent) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+  text-decoration-thickness: 1px !important;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--cc-accent-hover) !important;
+}
+
+/* ── 4. HEADER / TOP NAVBAR ───────────────────────────────────────────────── */
+.bd-header,
+.navbar,
+header.bd-header {
+  background-color: rgba(10, 10, 10, 0.95) !important;
+  border-bottom: 1px solid var(--cc-border) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  padding: 0 1.5rem !important;
+  height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.bd-header .navbar-brand,
+.bd-header .logo,
+.navbar-brand {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: var(--cc-text-primary) !important;
+  text-decoration: none !important;
+  letter-spacing: -0.01em;
+}
+
+.bd-header .navbar-brand:hover {
+  color: var(--cc-accent) !important;
+}
+
+/* Nav items in top bar */
+.bd-header .nav-link,
+.navbar-nav .nav-link {
+  color: var(--cc-text-secondary) !important;
+  font-size: 0.875rem !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 6px !important;
+  transition: color 0.15s, background 0.15s !important;
+  text-decoration: none !important;
+}
+
+.bd-header .nav-link:hover,
+.navbar-nav .nav-link:hover {
+  color: var(--cc-text-primary) !important;
+  background: var(--cc-bg-hover) !important;
+}
+
+.bd-header .nav-link.active,
+.navbar-nav .nav-link.active {
+  color: var(--cc-accent) !important;
+  background: var(--cc-accent-dim) !important;
+}
+
+/* Search box */
+.bd-search,
+.search-button,
+[type="search"] {
+  background: var(--cc-bg-surface) !important;
+  border: 1px solid var(--cc-border) !important;
+  border-radius: 8px !important;
+  color: var(--cc-text-secondary) !important;
+  font-size: 0.875rem !important;
+}
+
+.bd-search:focus,
+[type="search"]:focus {
+  outline: none !important;
+  border-color: var(--cc-accent) !important;
+  box-shadow: 0 0 0 2px var(--cc-accent-dim) !important;
+}
+
+/* ── 5. LEFT SIDEBAR (primary nav) ───────────────────────────────────────── */
+.bd-sidebar-primary,
+.bd-sidebar,
+.sidebar-primary-items__start,
+nav.bd-docs-nav {
+  background-color: var(--cc-bg-sidebar) !important;
+  border-right: 1px solid var(--cc-border) !important;
+}
+
+/* Sidebar section group labels — like "Core concepts", "Platforms" */
+.sidebar-primary-item .caption,
+.bd-sidenav .caption,
+.toctree-wrapper .caption,
+.sidebar-primary-items p.caption,
+p.sidebar-primary-items__start,
+.nav-heading,
+.sidebar-primary-items .caption-text {
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--cc-text-muted) !important;
+  padding: 1rem 1rem 0.4rem !important;
+  margin: 0 !important;
+}
+
+/* Nav items */
+.bd-sidenav a,
+.bd-docs-nav a,
+.sidebar-primary-items a,
+.navbar-nav a,
+nav.bd-docs-nav .reference {
+  display: block !important;
+  color: var(--cc-text-secondary) !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+  padding: 0.3rem 1rem !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  transition: color 0.15s, background 0.15s !important;
+  margin: 0.05rem 0.5rem !important;
+}
+
+.bd-sidenav a:hover,
+.bd-docs-nav a:hover,
+.sidebar-primary-items a:hover {
+  color: var(--cc-text-primary) !important;
+  background: var(--cc-bg-hover) !important;
+  text-decoration: none !important;
+}
+
+/* Active/current nav item — amber underline treatment */
+.bd-sidenav .current > a,
+.bd-docs-nav .current > a,
+.sidebar-primary-items .current > a,
+.bd-sidenav a.current,
+.bd-sidenav a[aria-current="page"] {
+  color: var(--cc-text-primary) !important;
+  background: var(--cc-accent-dim) !important;
+  border-left: 2px solid var(--cc-accent) !important;
+  padding-left: calc(1rem - 2px) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
+/* Nested nav */
+.bd-sidenav .toctree-l2 a,
+.bd-docs-nav .toctree-l2 a {
+  padding-left: 1.75rem !important;
+  font-size: 0.84rem !important;
+}
+
+.bd-sidenav .toctree-l3 a,
+.bd-docs-nav .toctree-l3 a {
+  padding-left: 2.5rem !important;
+  font-size: 0.82rem !important;
+}
+
+/* ── 6. MAIN CONTENT AREA ─────────────────────────────────────────────────── */
+.bd-page-width {
+  background-color: var(--cc-bg-page) !important;
+}
+
+.bd-main,
+.bd-article-container,
+main {
+  background-color: var(--cc-bg-page) !important;
+}
+
+/* Article content */
+article.bd-article,
+.bd-article {
+  background-color: var(--cc-bg-page) !important;
+  color: var(--cc-text-primary) !important;
+  max-width: 800px !important;
+  padding: 2rem 2.5rem !important;
+}
+
+/* Section label above h1 (breadcrumb-style uppercase label) */
+.bd-article .breadcrumb,
+.section-label,
+.breadcrumb-item + .breadcrumb-item::before {
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: var(--cc-accent) !important;
+}
+
+/* ── 7. RIGHT SIDEBAR (page TOC — "On this page") ────────────────────────── */
+.bd-sidebar-secondary,
+.toc-entry,
+nav.bd-toc {
+  background-color: var(--cc-bg-page) !important;
+  border-left: 1px solid var(--cc-border) !important;
+}
+
+.bd-sidebar-secondary .sidebar-secondary-title,
+.toc-title,
+.bd-toc .bd-toc-title {
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: var(--cc-text-muted) !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.bd-sidebar-secondary a,
+.bd-toc a,
+nav.bd-toc a {
+  color: var(--cc-text-secondary) !important;
+  font-size: 0.82rem !important;
+  text-decoration: none !important;
+  display: block !important;
+  padding: 0.2rem 0 !important;
+  transition: color 0.15s !important;
+  border-left: 2px solid transparent !important;
+  padding-left: 0.75rem !important;
+}
+
+.bd-sidebar-secondary a:hover,
+.bd-toc a:hover {
+  color: var(--cc-text-primary) !important;
+  border-left-color: var(--cc-accent) !important;
+}
+
+.bd-sidebar-secondary a.active,
+.bd-toc a.active {
+  color: var(--cc-accent) !important;
+  border-left-color: var(--cc-accent) !important;
+}
+
+/* ── 8. CODE BLOCKS ───────────────────────────────────────────────────────── */
+pre, pre.highlight {
+  background-color: var(--cc-bg-code) !important;
+  border: 1px solid var(--cc-border) !important;
+  border-radius: 8px !important;
+  padding: 1.25rem 1.5rem !important;
+  overflow-x: auto !important;
+  margin: 1.25rem 0 !important;
+}
+
+pre code, pre .highlight code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-family: var(--pst-font-family-monospace) !important;
+  font-size: 0.875rem !important;
+  color: #d4d4d4 !important;
+  line-height: 1.6 !important;
+}
+
+/* Inline code */
+code:not(pre code), tt {
+  background-color: var(--cc-bg-code) !important;
+  border: 1px solid var(--cc-border) !important;
+  border-radius: 4px !important;
+  padding: 0.15em 0.45em !important;
+  font-family: var(--pst-font-family-monospace) !important;
+  font-size: 0.875em !important;
+  color: #e0c8a8 !important;
+}
+
+/* Syntax highlighting tokens — keep legible on dark bg */
+.highlight .k, .highlight .kd, .highlight .kn { color: #c678dd; }  /* keywords */
+.highlight .s, .highlight .s1, .highlight .s2 { color: #98c379; }  /* strings */
+.highlight .c, .highlight .c1, .highlight .cm  { color: #5c6370; font-style: italic; }  /* comments */
+.highlight .n, .highlight .na              { color: #e06c75; }  /* names */
+.highlight .mi, .highlight .mf             { color: #d19a66; }  /* numbers */
+.highlight .o                              { color: #56b6c2; }  /* operators */
+.highlight .nf, .highlight .nb             { color: #61afef; }  /* functions/builtins */
+
+/* ── 9. ADMONITION / CALLOUT BOXES ───────────────────────────────────────── */
+.admonition,
+div.admonition {
+  background-color: var(--cc-bg-surface) !important;
+  border: 1px solid var(--cc-border) !important;
+  border-left: 3px solid var(--cc-accent) !important;
+  border-radius: 8px !important;
+  padding: 1rem 1.25rem !important;
+  margin: 1.25rem 0 !important;
+}
+
+.admonition-title {
+  font-weight: 700 !important;
+  font-size: 0.875rem !important;
+  color: var(--cc-text-primary) !important;
+  margin-bottom: 0.5rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.admonition.note, .admonition.seealso {
+  border-left-color: #6aabde !important;
+}
+.admonition.note .admonition-title,
+.admonition.seealso .admonition-title {
+  color: #6aabde !important;
+}
+
+.admonition.warning {
+  border-left-color: #e8a44a !important;
+  background-color: rgba(232, 164, 74, 0.07) !important;
+}
+.admonition.warning .admonition-title {
+  color: #e8a44a !important;
+}
+
+.admonition.tip, .admonition.hint {
+  border-left-color: #6abf85 !important;
+  background-color: rgba(106, 191, 133, 0.07) !important;
+}
+.admonition.tip .admonition-title,
+.admonition.hint .admonition-title {
+  color: #6abf85 !important;
+}
+
+.admonition.important, .admonition.danger, .admonition.caution {
+  border-left-color: #e06060 !important;
+  background-color: rgba(220, 80, 80, 0.07) !important;
+}
+.admonition.important .admonition-title,
+.admonition.danger .admonition-title {
+  color: #e06060 !important;
+}
+
+/* ── 10. TABLES ───────────────────────────────────────────────────────────── */
+table {
+  background-color: var(--cc-bg-surface) !important;
+  border: 1px solid var(--cc-border) !important;
+  border-radius: 8px !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  font-size: 0.9rem !important;
+  margin: 1.25rem 0 !important;
+}
+
+th {
+  background-color: var(--cc-bg-hover) !important;
+  color: var(--cc-text-secondary) !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  padding: 0.75rem 1rem !important;
+  border-bottom: 1px solid var(--cc-border) !important;
+  text-align: left !important;
+}
+
+td {
+  color: var(--cc-text-primary) !important;
+  padding: 0.6rem 1rem !important;
+  border-bottom: 1px solid var(--cc-border-subtle) !important;
+}
+
+tr:last-child td {
+  border-bottom: none !important;
+}
+
+tr:hover td {
+  background-color: var(--cc-bg-hover) !important;
+}
+
+/* ── 11. FIGURES & IMAGES ─────────────────────────────────────────────────── */
+figure {
+  margin: 2rem auto !important;
+  text-align: center !important;
+}
+
+figure img {
+  max-width: 100% !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--cc-border) !important;
+}
+
+figcaption, .caption-text {
+  color: var(--cc-text-secondary) !important;
+  font-size: 0.85rem !important;
+  margin-top: 0.75rem !important;
+  font-style: italic !important;
+  line-height: 1.5 !important;
+}
+
+/* Matplotlib/Jupyter output figures — white bg, visible */
+.cell_output img,
+.output img {
+  background-color: white !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--cc-border) !important;
+  padding: 0.5rem !important;
+}
+
+/* ── 12. BREADCRUMB ───────────────────────────────────────────────────────── */
+.bd-breadcrumbs,
+.breadcrumb {
+  background: transparent !important;
+  padding: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.breadcrumb-item, .breadcrumb-item a {
+  color: var(--cc-text-muted) !important;
+  font-size: 0.8rem !important;
+  text-decoration: none !important;
+}
+
+.breadcrumb-item.active {
+  color: var(--cc-text-secondary) !important;
+}
+
+/* ── 13. PREV / NEXT NAVIGATION ───────────────────────────────────────────── */
+.prev-next-footer,
+.prev-next-area {
+  background: transparent !important;
+  border-top: 1px solid var(--cc-border) !important;
+  margin-top: 3rem !important;
+  padding-top: 1.5rem !important;
+}
+
+.prev-next-footer a,
+.prev-next-area a {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  color: var(--cc-text-secondary) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  padding: 0.6rem 1rem !important;
+  border: 1px solid var(--cc-border) !important;
+  border-radius: 8px !important;
+  background: var(--cc-bg-surface) !important;
+  text-decoration: none !important;
+  transition: border-color 0.15s, color 0.15s, background 0.15s !important;
+}
+
+.prev-next-footer a:hover,
+.prev-next-area a:hover {
+  border-color: var(--cc-accent) !important;
+  color: var(--cc-text-primary) !important;
+  background: var(--cc-accent-dim) !important;
+}
+
+/* ── 14. JUPYTER NOTEBOOK CELL STYLING ────────────────────────────────────── */
+.cell,
+.jp-Cell {
+  border: none !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.cell_input, .input_area {
+  background-color: var(--cc-bg-code) !important;
+  border: 1px solid var(--cc-border) !important;
+  border-radius: 8px !important;
+}
+
+.cell_output, .output_area {
+  background-color: transparent !important;
+  padding: 0.5rem 0 !important;
+}
+
+/* Prompt / In [ ] label */
+.prompt, .cell_label {
+  color: var(--cc-text-muted) !important;
+  font-family: var(--pst-font-family-monospace) !important;
+  font-size: 0.8rem !important;
+}
+
+/* ── 15. SCROLLBARS ───────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--cc-bg-sidebar); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* ── 16. FOOTER ───────────────────────────────────────────────────────────── */
+footer, .bd-footer {
+  background-color: var(--cc-bg-sidebar) !important;
+  border-top: 1px solid var(--cc-border) !important;
+  color: var(--cc-text-muted) !important;
+  font-size: 0.8rem !important;
+  padding: 1.5rem 2rem !important;
+}
+
+footer a, .bd-footer a {
+  color: var(--cc-text-secondary) !important;
+}
+
+/* ── 17. MISC UI ELEMENTS ─────────────────────────────────────────────────── */
+
+/* Horizontal rules */
+hr {
+  border: none !important;
+  border-top: 1px solid var(--cc-border) !important;
+  margin: 2rem 0 !important;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid var(--cc-accent) !important;
+  background: var(--cc-bg-surface) !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: 0 6px 6px 0 !important;
+  margin: 1rem 0 !important;
+  color: var(--cc-text-secondary) !important;
+}
+
+/* Numbered/bulleted lists */
+ul, ol {
+  color: var(--cc-text-primary);
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+  line-height: 1.7;
+}
+
+/* Strong / bold */
+strong, b {
+  color: var(--cc-text-primary);
+  font-weight: 600;
+}
+
+/* MathJax */
+.MathJax, .MathJax_Display {
+  color: var(--cc-text-primary) !important;
+}
+
+/* ── 18. MOBILE RESPONSIVE ────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  article.bd-article, .bd-article {
+    padding: 1.25rem 1rem !important;
+  }
+
+  h1, .h1 {
+    font-size: 1.6rem !important;
+  }
+
+  h2, .h2 {
+    font-size: 1.25rem !important;
+  }
+
+  .bd-header {
+    height: 52px !important;
+    padding: 0 1rem !important;
+  }
+
+  pre {
+    padding: 1rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  table {
+    font-size: 0.82rem !important;
+  }
+
+  /* Breadcrumb on mobile — matches Claude docs mobile header */
+  .bd-breadcrumbs {
+    font-size: 0.78rem !important;
+    color: var(--cc-accent) !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 0.75rem !important;
+  }
+}
+
+/* ── 19. EXISTING LAYOUT FIXES (preserved) ────────────────────────────────── */
+
+/* Move prev/next to bottom */
 .bd-content {
-    flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
 }
 
 .bd-article-container {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    min-width: 0;
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  min-width: 0;
 }
 
 .prev-next-footer {
-    flex: 0 0 100% !important;
-    width: 100% !important;
-    max-width: 100% !important;
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
-/* Move the secondary sidebar (Contents / page TOC) to the right of the
-   article content. By default .bd-main is flex-direction: column, which
-   stacks the sidebar below the article. Switching to row puts it beside
-   the article; align-items: flex-start keeps it top-aligned and allows
-   the sticky positioning inside to work. */
+/* Right TOC placement */
 .bd-main {
-    flex-direction: row !important;
-    align-items: flex-start !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
 }
 
 .bd-sidebar-secondary {
-    order: 2;
-    position: sticky !important;
-    top: 1rem !important;
-    max-height: calc(100vh - 2rem) !important;
-    overflow-y: auto !important;
-    flex-shrink: 0 !important;
+  order: 2;
+  position: sticky !important;
+  top: 4rem !important;
+  max-height: calc(100vh - 5rem) !important;
+  overflow-y: auto !important;
+  flex-shrink: 0 !important;
 }
 
-/* Copyright note injected under the Contents sidebar by custom.js */
+/* Copyright note */
 .bd-sidebar-secondary .sidebar-copyright {
-    padding: 0.75rem 1rem 0.5rem;
-    font-size: 0.75rem;
-    color: var(--pst-color-text-muted, #6c757d);
-    border-top: 1px solid var(--pst-color-border, #dee2e6);
-    margin-top: 1rem;
+  padding: 0.75rem 1rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--cc-text-muted);
+  border-top: 1px solid var(--cc-border);
+  margin-top: 1rem;
+}
+
+/* ── 20. SELECTION ────────────────────────────────────────────────────────── */
+::selection {
+  background-color: var(--cc-accent-dim) !important;
+  color: var(--cc-text-primary) !important;
 }
