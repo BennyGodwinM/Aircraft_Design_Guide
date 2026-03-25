@@ -123,17 +123,25 @@ parts:
       #     - file: 10_Stability_Aero/02_directional_lateral
 
   # ── PART IV — PROPULSION SYSTEMS ────────────────────────────────────────────
-  # - caption: "Part IV — Propulsion Systems"
-  #   chapters:
+  - caption: "Part IV — Propulsion Systems"
+    chapters:
+      - file: 11_Propulsion/index
+        title: "11 — Aerospace Propulsion"
+        sections:
+          - file: 11_Propulsion/01_propulsion_crash_course
+            title: "11.1 — Propulsion Crash Course"
+          - file: 11_Propulsion/02_propulsion_history
+            title: "11.2 — A History of Aerospace Propulsion"
 
-      # Uncomment when Section 11 is complete:
-      # - file: 11_Propulsion/index
-      #   title: "11 — Propulsion Overview & Selection"
-      #   sections:
-      #     - file: 11_Propulsion/01_propulsion_taxonomy
-      #     - file: 11_Propulsion/02_engine_matching
-      #     - file: 11_Propulsion/03_gas_turbine
-      #     - file: 11_Propulsion/04_electric_propulsion
+      # Uncomment when remaining propulsion sections are complete:
+      # - file: 11_Propulsion/01_propulsion_taxonomy
+      #   title: "11.3 — Propulsion System Taxonomy"
+      # - file: 11_Propulsion/02_engine_matching
+      #   title: "11.4 — Engine Matching & Rubber Engine Concept"
+      # - file: 11_Propulsion/03_gas_turbine
+      #   title: "11.5 — Gas Turbine Engine Design Fundamentals"
+      # - file: 11_Propulsion/04_electric_propulsion
+      #   title: "11.6 — Electric Propulsion & Energy Storage"
 
   # ── PART V — STRUCTURAL DESIGN & MATERIALS ──────────────────────────────────
   # - caption: "Part V — Structural Design & Materials"

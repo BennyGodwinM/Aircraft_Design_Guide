@@ -507,10 +507,10 @@ figcaption, .caption-text {
   line-height: 1.5 !important;
 }
 
-/* Matplotlib/Jupyter output figures — white bg, visible */
+/* Matplotlib/Jupyter output figures — transparent bg, blends with dark theme */
 .cell_output img,
 .output img {
-  background-color: white !important;
+  background-color: transparent !important;
   border-radius: 8px !important;
   border: 1px solid var(--cc-border) !important;
   padding: 0.5rem !important;

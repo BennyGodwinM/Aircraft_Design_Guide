@@ -1,16 +1,8 @@
-# Section 11 — Propulsion Overview & Selection
+# Part IV — Propulsion Systems
 
-**PART IV — PROPULSION SYSTEMS**
+Propulsion is the heartbeat of any aircraft. This part traces the physics, engineering, and history of every propulsion technology that has taken humanity from the Wright brothers' 12-horsepower piston engine to the geared turbofans and open-fan architectures shaping the next generation of commercial aviation.
 
-> *What propulsion technology propels the vehicle, and how is the right one chosen?*
+## Chapters
 
-```{{note}}
- **This section is under construction.** It will be published once the notebooks are complete.
+```{tableofcontents}
 ```
-
-## Sections in this Chapter
-
-- 11.1 — Propulsion System Taxonomy
-- 11.2 — Engine Matching & Rubber Engine Concept
-- 11.3 — Gas Turbine Engine Design Fundamentals
-- 11.4 — Electric Propulsion & Energy Storage
