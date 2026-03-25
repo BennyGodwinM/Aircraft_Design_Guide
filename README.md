@@ -22,21 +22,6 @@ The primary references are Raymer, Torenbeek, and Anderson. Where those sources 
 
 ---
 
-## Primary References
-
-| Reference | Used for |
-|-----------|----------|
-| Raymer, D. P. *Aircraft Design: A Conceptual Approach*, 6th ed. AIAA, 2018. | Conceptual design methodology, weight estimation, configuration selection |
-| Torenbeek, E. *Advanced Aircraft Design*. Wiley, 2013. | Advanced optimization, civil transport methodology |
-| Anderson, J. D. *Introduction to Flight*, 7th ed. McGraw-Hill, 2012. | Aerodynamic foundations, introductory definitions |
-| Nicolai, L. M. *Estimating R/C Model Aerodynamics and Performance*. Lockheed Martin, 2002. | Drag estimation, small aircraft performance |
-| Sadraey, M. H. *Aircraft Design: A Systems Engineering Approach*. Wiley, 2012. | Systems engineering perspective, requirements |
-| GabeFPV. *Engineering a UAV — Part 1*. YouTube, Feb. 2026. | Practical UAV design walkthrough, mission requirements, constraint analysis |
-
-Full bibliography entries are in [`references.bib`](references.bib).
-
----
-
 ## Author
 
 **Benny Godwin Manoharan**
