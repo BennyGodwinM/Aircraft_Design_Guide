@@ -3,9 +3,7 @@
 # Aircraft Design Guide
 > “If we all worked on the assumption that what is accepted as true is really true, there would be little hope of advance.” ― Orville Wright
 
-**Notes covering the full aircraft design cycle —<br>from mission definition and configuration selection through to manufacturing, sustainment, and future trends.**
-
-*Fixed-Wing Aircraft · Rotorcraft · Multirotor UAVs · Tiltrotors · Fighter Jets · Hybrid VTOL*
+**Notes covering the aircraft design cycle**
 
 </div>
 
