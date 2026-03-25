@@ -2,12 +2,7 @@
 
 # Aircraft Design Guide
 
-**A comprehensive, open-source Jupyter Book covering the full aircraft design cycle —<br>from mission definition and configuration selection through to manufacturing, sustainment, and future trends.**
-
-[![Live Site](https://img.shields.io/badge/Read%20Online-GitHub%20Pages-blue?style=flat-square&logo=github)](https://bennygodwinm.github.io/Aircraft_Design_Guide)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/BennyGodwinM/Aircraft_Design_Guide/deploy.yml?branch=main&style=flat-square&label=Build)](https://github.com/BennyGodwinM/Aircraft_Design_Guide/actions)
-[![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey?style=flat-square)](LICENSE)
-[![Jupyter Book](https://img.shields.io/badge/built%20with-Jupyter%20Book-orange?style=flat-square&logo=jupyter)](https://jupyterbook.org)
+**Notes covering the full aircraft design cycle —<br>from mission definition and configuration selection through to manufacturing, sustainment, and future trends.**
 
 *Fixed-Wing Aircraft · Rotorcraft · Multirotor UAVs · Tiltrotors · Fighter Jets · Hybrid VTOL*
 
@@ -21,7 +16,7 @@ This guide is an open, engineer-first reference on aircraft design — not a tex
 
 Each section is a Jupyter notebook. The markdown cells contain theory, physical reasoning, and discussion; the code cells contain Python implementations of key relationships and produce figures that are referenced in the text. The approach mirrors the real design process: start broad, make educated assumptions, and refine progressively through iteration.
 
-The primary references are Raymer, Torenbeek, and Anderson. Where those sources are drawn from they are cited in-text. Where content draws on hands-on practice — from leading AIAA Design-Build-Fly and competitive aircraft design programmes, structural analysis at NIAR, and flight-data research — that is noted too.
+The primary references are Raymer, Torenbeek, and Anderson. Where those sources are drawn from they are cited in-text
 
 > **→ [Read the guide online](https://bennygodwinm.github.io/Aircraft_Design_Guide)**
 
