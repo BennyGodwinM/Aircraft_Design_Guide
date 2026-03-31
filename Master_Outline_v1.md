@@ -42,10 +42,6 @@ The Mechanical Design Process (Ullman); Raymer Ch. 2; Sadraey — Aircraft Desig
 - Functional vs. non-functional requirements
 - Requirements traceability matrix (RTM)
 - MIL-STD-961 and DO-178C/DO-254 overview
-### 2.4 Mission Profiles and Design Drivers
-### 2.5 Figures of Merit, Weighted Decision Matrices, and Trade Studies
-### 2.6 Systems Engineering Process — Concurrent Engineering and IPT Structure
-### 2.7 The Design Review Cycle: SRR, PDR, CDR, TRR
 
 ---
 
@@ -63,6 +59,17 @@ NASA Systems Engineering Handbook; Understanding Air France 447; Crash Detective
 ### 3.4 Safety Philosophy: Failure Modes, FTA, and Certification by Analysis
 ### 3.5 Environmental and Noise Regulations — ICAO Annex 16, Stage standards
 ### 3.6 Case Studies in Certification Failure — Air France 447, Boeing 737 MAX
+
+---
+---
+
+## Section 4 · Continuation of System Engineering
+*Primary refs: NASA Systems Engineering Handbook; Systems Engineering for Aerospace (Sheng);
+The Mechanical Design Process (Ullman); Raymer Ch. 2; Sadraey — Aircraft Design: A Systems Engineering Approach*
+### 2.4 Mission Profiles and Design Drivers
+### 2.5 Figures of Merit, Weighted Decision Matrices, and Trade Studies
+### 2.6 Systems Engineering Process — Concurrent Engineering and IPT Structure
+### 2.7 The Design Review Cycle: SRR, PDR, CDR, TRR
 
 ---
 
