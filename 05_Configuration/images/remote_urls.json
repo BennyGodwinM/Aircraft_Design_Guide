@@ -1,0 +1,149 @@
+{
+  "cessna172": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Cessna_172_Skyhawk%2C_S2-AFH.jpg/960px-Cessna_172_Skyhawk%2C_S2-AFH.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Md Shaifuzzaman",
+    "commons": "https://commons.wikimedia.org/wiki/File:Cessna%20172%20Skyhawk%2C%20S2-AFH.jpg",
+    "title": "File:Cessna 172 Skyhawk, S2-AFH.jpg"
+  },
+  "predator": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/MQ-1_Predator_unmanned_aircraft.jpg/960px-MQ-1_Predator_unmanned_aircraft.jpg",
+    "license": "Public domain",
+    "author": "U.S. Air Force photo/Lt Col Leslie Pratt",
+    "commons": "https://commons.wikimedia.org/wiki/File:MQ-1_Predator_unmanned_aircraft.jpg",
+    "title": "File:MQ-1_Predator_unmanned_aircraft.jpg"
+  },
+  "p38": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Lockheed_P-38_Lightning_%28USAAC%29.jpg/960px-Lockheed_P-38_Lightning_%28USAAC%29.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "William Pretrina",
+    "commons": "https://commons.wikimedia.org/wiki/File:Lockheed%20P-38%20Lightning%20%28USAAC%29.jpg",
+    "title": "File:Lockheed P-38 Lightning (USAAC).jpg"
+  },
+  "c130": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/20180512_C-130J_Super_Hercules_Dyess_AFB_Air_Show_2018_1.jpg/960px-20180512_C-130J_Super_Hercules_Dyess_AFB_Air_Show_2018_1.jpg",
+    "license": "CC0",
+    "author": "Balon Greyjoy",
+    "commons": "https://commons.wikimedia.org/wiki/File:20180512%20C-130J%20Super%20Hercules%20Dyess%20AFB%20Air%20Show%202018%201.jpg",
+    "title": "File:20180512 C-130J Super Hercules Dyess AFB Air Show 2018 1.jpg"
+  },
+  "spitfire": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Air_to_air_image_of_a_Spitfire%2C_taken_over_RAF_Coningsby._MOD_45147974.jpg/960px-Air_to_air_image_of_a_Spitfire%2C_taken_over_RAF_Coningsby._MOD_45147974.jpg",
+    "license": "OGL v1.0",
+    "author": "SAC Scott Lewis",
+    "commons": "https://commons.wikimedia.org/wiki/File:Air%20to%20air%20image%20of%20a%20Spitfire%2C%20taken%20over%20RAF%20Coningsby.%20MOD%2045147974.jpg",
+    "title": "File:Air to air image of a Spitfire, taken over RAF Coningsby. MOD 45147974.jpg"
+  },
+  "b737": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Airzena_Boeing_737-500_Nikiforov.jpg/960px-Airzena_Boeing_737-500_Nikiforov.jpg",
+    "license": "GFDL 1.2",
+    "author": "Konstantin Nikiforov",
+    "commons": "https://commons.wikimedia.org/wiki/File:Airzena%20Boeing%20737-500%20Nikiforov.jpg",
+    "title": "File:Airzena Boeing 737-500 Nikiforov.jpg"
+  },
+  "cessna150": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Cessna_150M_Commuter_AN1559987.jpg/960px-Cessna_150M_Commuter_AN1559987.jpg",
+    "license": "GFDL 1.2",
+    "author": "Alan Lebeda",
+    "commons": "https://commons.wikimedia.org/wiki/File:Cessna%20150M%20Commuter%20AN1559987.jpg",
+    "title": "File:Cessna 150M Commuter AN1559987.jpg"
+  },
+  "x29": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Top_view_of_NASA%27s_two_X-29_aircraft_%28EC90-357-4%29.jpg/960px-Top_view_of_NASA%27s_two_X-29_aircraft_%28EC90-357-4%29.jpg",
+    "license": "Public domain",
+    "author": "NASA/DFRC/Bob Brown",
+    "commons": "https://commons.wikimedia.org/wiki/File:Top%20view%20of%20NASA%27s%20two%20X-29%20aircraft%20%28EC90-357-4%29.jpg",
+    "title": "File:Top view of NASA's two X-29 aircraft (EC90-357-4).jpg"
+  },
+  "f86": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/North_American_F-86F_Sabre_of_the_ROKAF.jpg/960px-North_American_F-86F_Sabre_of_the_ROKAF.jpg",
+    "license": "CC BY 4.0",
+    "author": "Photographer: Mosbatho",
+    "commons": "https://commons.wikimedia.org/wiki/File:North%20American%20F-86F%20Sabre%20of%20the%20ROKAF.jpg",
+    "title": "File:North American F-86F Sabre of the ROKAF.jpg"
+  },
+  "mirage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Dassault_Mirage_III_-_32.jpg/960px-Dassault_Mirage_III_-_32.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Another one of my pictures:\n\n\n\nThis photograph was taken by Medium69 (William Cr",
+    "commons": "https://commons.wikimedia.org/wiki/File:Dassault%20Mirage%20III%20-%2032.jpg",
+    "title": "File:Dassault Mirage III - 32.jpg"
+  },
+  "fa18": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/An_F-A-18C_Hornet_launches_from_the_flight_deck_of_the_conventionally_powered_aircraft_carrier.jpg/960px-An_F-A-18C_Hornet_launches_from_the_flight_deck_of_the_conventionally_powered_aircraft_carrier.jpg",
+    "license": "Public domain",
+    "author": "U.S. Navy photo by Photographer's Mate 3rd Class Jonathan Chandler",
+    "commons": "https://commons.wikimedia.org/wiki/File:An%20F-A-18C%20Hornet%20launches%20from%20the%20flight%20deck%20of%20the%20conventionally%20powered%20aircraft%20carrier.jpg",
+    "title": "File:An F-A-18C Hornet launches from the flight deck of the conventionally powered aircraft carrier.jpg"
+  },
+  "learjet": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Learjet_25_der_NASA.jpg",
+    "license": "Public domain",
+    "author": "NASA",
+    "commons": "https://commons.wikimedia.org/wiki/File:Learjet%2025%20der%20NASA.jpg",
+    "title": "File:Learjet 25 der NASA.jpg"
+  },
+  "bonanza": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Beechcraft_V35_Bonanza%2C_Private_JP6899220.jpg/960px-Beechcraft_V35_Bonanza%2C_Private_JP6899220.jpg",
+    "license": "GFDL 1.2",
+    "author": "Peter Bakema",
+    "commons": "https://commons.wikimedia.org/wiki/File:Beechcraft%20V35%20Bonanza%2C%20Private%20JP6899220.jpg",
+    "title": "File:Beechcraft V35 Bonanza, Private JP6899220.jpg"
+  },
+  "vampire": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/De_Havilland_DH.100_Vampire_MLP_07.jpg/960px-De_Havilland_DH.100_Vampire_MLP_07.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Zala",
+    "commons": "https://commons.wikimedia.org/wiki/File:De%20Havilland%20DH.100%20Vampire%20MLP%2007.jpg",
+    "title": "File:De Havilland DH.100 Vampire MLP 07.jpg"
+  },
+  "harrier": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Harrier_Jump_Jet%2C_Bletchley_Park_-_geograph.org.uk_-_1982353.jpg/960px-Harrier_Jump_Jet%2C_Bletchley_Park_-_geograph.org.uk_-_1982353.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Paul Buckingham",
+    "commons": "https://commons.wikimedia.org/wiki/File:Harrier%20Jump%20Jet%2C%20Bletchley%20Park%20-%20geograph.org.uk%20-%201982353.jpg",
+    "title": "File:Harrier Jump Jet, Bletchley Park - geograph.org.uk - 1982353.jpg"
+  },
+  "constellation": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lockheed_C-121C_Super_Constellation%2C_Super_Constellation_Flyers_Association_JP6615666.jpg/960px-Lockheed_C-121C_Super_Constellation%2C_Super_Constellation_Flyers_Association_JP6615666.jpg",
+    "license": "GFDL 1.2",
+    "author": "Aldo Bidini",
+    "commons": "https://commons.wikimedia.org/wiki/File:Lockheed%20C-121C%20Super%20Constellation%2C%20Super%20Constellation%20Flyers%20Association%20JP6615666.jpg",
+    "title": "File:Lockheed C-121C Super Constellation, Super Constellation Flyers Association JP6615666.jpg"
+  },
+  "typhoon": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/RAF_Typhoon_inflight.jpg/960px-RAF_Typhoon_inflight.jpg",
+    "license": "OGL 2",
+    "author": "Sqn Ldr Dylan Eklund",
+    "commons": "https://commons.wikimedia.org/wiki/File:RAF%20Typhoon%20inflight.jpg",
+    "title": "File:RAF Typhoon inflight.jpg"
+  },
+  "piaggio": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Piaggio_P180_Avanti_FDK_MD2.jpg/960px-Piaggio_P180_Avanti_FDK_MD2.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Acroterion",
+    "commons": "https://commons.wikimedia.org/wiki/File:Piaggio%20P180%20Avanti%20FDK%20MD2.jpg",
+    "title": "File:Piaggio P180 Avanti FDK MD2.jpg"
+  },
+  "b2": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/B-2_Spirit_original.jpg/960px-B-2_Spirit_original.jpg",
+    "license": "Public domain",
+    "author": "U.S. Air Force photo/Staff Sgt. Bennie J. Davis III",
+    "commons": "https://commons.wikimedia.org/wiki/File:B-2_Spirit_original.jpg",
+    "title": "File:B-2_Spirit_original.jpg"
+  },
+  "x48": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/X-48B_Blended_Wing_Body_aircraft_with_chase_plane.jpg/960px-X-48B_Blended_Wing_Body_aircraft_with_chase_plane.jpg",
+    "license": "Public domain",
+    "author": "Tony Landis/NASA",
+    "commons": "https://commons.wikimedia.org/wiki/File:X-48B%20Blended%20Wing%20Body%20aircraft%20with%20chase%20plane.jpg",
+    "title": "File:X-48B Blended Wing Body aircraft with chase plane.jpg"
+  },
+  "p51": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/A_restored_NACA_P-51D_Mustang_in_flight_%28EC00-0277-4%29.jpg/960px-A_restored_NACA_P-51D_Mustang_in_flight_%28EC00-0277-4%29.jpg",
+    "license": "Public domain",
+    "author": "NASA Armstrong Flight Research Center / NASA/Jim Ross",
+    "commons": "https://commons.wikimedia.org/wiki/File:A%20restored%20NACA%20P-51D%20Mustang%20in%20flight%20%28EC00-0277-4%29.jpg",
+    "title": "File:A restored NACA P-51D Mustang in flight (EC00-0277-4).jpg"
+  }
+}
