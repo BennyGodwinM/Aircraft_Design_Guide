@@ -36,15 +36,24 @@ parts:
           - file: 01_Overview/07_summary
             title: "1.7 — Summary"
 
-      # Uncomment when Section 2 is complete:
-      # - file: 02_Requirements/index
-      #   title: "2 — Stakeholders, Requirements & Specifications"
-      #   sections:
-      #     - file: 02_Requirements/01_stakeholders
-      #     - file: 02_Requirements/02_needs_goals
-      #     - file: 02_Requirements/03_requirements_engineering
-      #     - file: 02_Requirements/04_mission_profiles
-      #     - file: 02_Requirements/05_design_drivers
+      # COMPLETE
+      - file: 02_Requirements/index
+        title: "2 — Stakeholders, Requirements & Systems Engineering"
+        sections:
+          - file: 02_Requirements/01_stakeholders
+            title: "2.1 — Stakeholder Identification & Analysis"
+          - file: 02_Requirements/02_needs_goals
+            title: "2.2 — Needs, Goals & Objectives"
+          - file: 02_Requirements/03_requirements_engineering
+            title: "2.3 — Requirements Engineering"
+          - file: 02_Requirements/04_mission_profiles
+            title: "2.4 — Mission Profiles"
+          - file: 02_Requirements/05_design_drivers
+            title: "2.5 — Design Drivers & Figures of Merit"
+          - file: 02_Requirements/06_systems_engineering
+            title: "2.6 — The Systems Engineering Process"
+          - file: 02_Requirements/07_design_reviews
+            title: "2.7 — The Design Review Cycle"
 
       # Uncomment when Section 3 is complete:
       # - file: 03_Regulations/index
@@ -57,8 +66,8 @@ parts:
       #     - file: 03_Regulations/05_environmental_noise
 
   # ── PART II — MISSION ANALYSIS & CONCEPTUAL DESIGN ─────────────────────────
-  # - caption: "Part II — Mission Analysis & Conceptual Design"
-  #   chapters:
+  - caption: "Part II — Mission Analysis & Conceptual Design"
+    chapters:
 
       # Uncomment when Section 4 is complete:
       # - file: 04_Mission_Analysis/index
@@ -68,11 +77,12 @@ parts:
       #     - file: 04_Mission_Analysis/02_fuel_fraction
       #     - file: 04_Mission_Analysis/03_constraint_analysis
 
-      # Uncomment when Section 5 is complete:
-      # - file: 05_Configuration/index
-      #   title: "5 — Conceptual Design & Configuration Selection"
-      #   sections:
-      #     - file: 05_Configuration/01_fixed_wing_config
+      # PARTIAL — 5.1 complete; 5.2–5.5 pending
+      - file: 05_Configuration/index
+        title: "5 — Conceptual Design & Configuration Selection"
+        sections:
+          - file: 05_Configuration/01_fixed_wing_config
+            title: "5.1 — Fixed-Wing Configurations"
       #     - file: 05_Configuration/02_rotorcraft_config
       #     - file: 05_Configuration/03_multirotor_config
       #     - file: 05_Configuration/04_tiltrotor_config
